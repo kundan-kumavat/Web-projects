@@ -1,0 +1,151 @@
+:root{
+    --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+body{
+    margin: 0;
+    padding: 20px;
+    background-color: #111;
+}
+
+/* header */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    text-align: center;
+}
+
+.text p{
+    font-size: 25px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.container2{
+    margin: 5px;
+    padding: 1vw;
+    box-shadow: rgba(0, 255, 255, 1) 0px 1px 4px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
+/* profile */
+
+.profile{
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+
+.details p{
+    color: #fff;
+    font-size: 'Poppins';
+    font-weight: normal;
+    margin: 0px 0px;
+    font-size: 25px;
+}
+
+.details h5{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 'Poppins';
+    font-weight: normal;
+    margin: 5px 0px;
+    font-size: 20px;
+}
+
+.container2:hover{
+    background: var(--black-gradient);
+}
+
+/* container */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.card{
+    margin: 10px;
+    padding: 2vw;
+    box-shadow: rgba(255, 255, 255, 1) 0px 0px 3px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.container .card:hover{
+    background: var(--black-gradient);
+    transform: scale(1.05);
+}
+
+.card .content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content .image{
+    width: 300px;
+    height: 150px;
+}
+
+.content a{
+    text-decoration: none;
+    color: black;
+}
+
+.content p{
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: normal;
+    color: #fff;
+}
+
+.content span{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.button{
+    width: 70%;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+}
+
+.button:hover{
+    animation: pulsate 2s 1;
+}
+  
+@keyframes pulsate{
+    0%{
+       box-shadow:
+       0 0 25px #33bbcf;
+    }
+}

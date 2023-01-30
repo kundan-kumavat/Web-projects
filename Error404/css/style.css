@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 146, 110);
+}
+
+/* nav */
+
+.nav{
+    padding: 28px;
+}
+
+.nav a,.footer a{
+    color: black;
+    text-decoration: none;
+}
+.nav a:hover{
+    border-bottom: 2px solid #000;
+    padding-bottom: 20px;
+}
+.contact{
+    float: right;
+}
+.contact a{
+    padding: 0 20px;
+}
+
+.nav div{
+    display: inline-block;
+}
+
+.logo{
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+/* contanier */
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+    padding: 60px;
+}
+
+.effects{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    bottom: 50px;
+    left: 80px;
+    z-index: -1;
+}
+
+.white__gradient {
+    background: rgba(255, 255, 255, 0.85);
+    filter: blur(750px);
+}
+
+.image{
+    float: right;
+}
+
+.container h1{
+    font-size: 70px;
+}
+
+.container h2{
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0px 10px;
+}
+
+.container p{
+    font-size: 25px;
+    margin: 25px 10px;
+}
+
+.button{
+    margin: 50px 0px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(76, 230, 158), rgb(15, 144, 173));
+}
+
+.button:hover{
+    animation: plusate  1s 1;
+}
+
+@keyframes plusate{
+    0%{
+        box-shadow: 
+        0px 0px 10px rgb(0, 0, 0);
+    }
+    50%{
+        box-shadow: 
+        0px 0px 20px rgb(7, 6, 1);
+    }
+}
+
+/* footer */
+.footer p{
+    text-align: center;
+    margin-top: 18px;
+}
+
+@media only  screen and  (max-width: 600px){
+    .image{
+        width: 300px;
+        height: 300px;
+    }
+}

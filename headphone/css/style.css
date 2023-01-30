@@ -1,0 +1,231 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.contanier{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.section{
+    margin: 0;
+    padding: 0;
+    width: 33.33%;
+    height: 100%;
+}
+
+h2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button{
+    width: 30%;
+    padding: 13px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+h3{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+/* Content-1  css*/
+
+.content-1{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(200, 239, 245);
+    align-items: center;
+}
+
+.content-1 p{
+    padding: 5px 0px;
+}
+
+.content-1 button{
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.content-1 img{
+    margin-right: -57px;
+    width: 450px;
+    height: 450px;
+    margin-bottom: 0px;
+}
+
+.text-gradient {
+    background: radial-gradient(
+      64.18% 64.18% at 71.16% 35.69%,
+      #37a0fb 0.89%,
+      #1ab0ec 17.23%,
+      #3d56b0 42.04%,
+      #156dd1 55.12%,
+      #0b65c0 71.54%,
+      #2722b8 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* content 2 css*/
+
+.content-2{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(1, 25, 53);
+    align-items: center;
+}
+
+.content-2 img{
+    width: 250px;
+    height: 250px;
+    margin: 30px 0px;
+}
+
+.content-2 button{
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.content-2 h2{
+    color: #fff;
+}
+
+.content-2 details{
+    display: flex;
+    flex-direction: column;
+}
+
+.details p{
+    margin: 24px 0px;
+    color: rgb(158, 245, 245);
+    font-size: 17px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.content-2 h3{
+    color: #fff;
+}
+
+.content-2 button{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.text-gradient2{
+    background: radial-gradient(
+        27.79% 64.18% at 90.16% 35.69%,
+      #4795e9 0.89%,
+      #20d867 17.23%,
+      #becadc 42.04%,
+      #2fc2cd 55.12%,
+      #32aac2 71.54%,
+      #82dbdf 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* content 3 css */
+
+.content-3{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(11, 11, 11, 0.9);
+    align-items: center;
+}
+
+.content-3 h2{
+    color: #fff;
+}
+
+.content-3 button{
+    background-color: aqua;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.content-3 img{
+    width: 330px;
+    height: 400px;
+    margin: 20px 0px;
+}
+
+.content-3 h2{
+    margin-top: 20px;
+}
+
+.content-3 p{
+    padding: 0px 10px;
+    color: rgb(38, 234, 224);
+    font-size: 19px;
+}
+
+.text-gradient3 {
+    background: radial-gradient(
+      64.18% 64.18% at 71.16% 35.69%,
+      #def9fa 0.89%,
+      #bef3f5 17.23%,
+      #9dedf0 42.04%,
+      #7de7eb 55.12%,
+      #5ce1e6 71.54%,
+      #33bbcf 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.content-3 h3{
+    color: #90d4bb;
+}
+
+@media only screen and (max-width: 900px) {
+    .contanier{
+        display: flex;
+        flex-direction: column;
+    }
+    .section{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .contanier{
+        display: flex;
+        flex-direction: column;
+    }
+    .section{
+        width: 100%;
+    }
+    .content-1 img{
+        width: 300px;
+        height: 300px;
+        margin-right: -18px;
+    }
+    button{
+        width: 40%;
+    }
+}
